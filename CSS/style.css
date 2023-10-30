@@ -6,6 +6,190 @@
     box-sizing: border-box;
 }
 
+:root {
+    --spo-black: black;
+    --spo-dark: #222222;
+    --spo-white: white;
+    --spo-gray: gray;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+
+/* #region Debug */
+
+.debug .wrapper {
+    background-color: #222222;
+}
+
+.debug .sidebar {
+    background-color: var(--spo-black);
+}
+
+.debug .upgrade {
+    background-color: olive;
+}
+
+.debug .scrollbar {
+    background-color: darkolivegreen;
+}
+
+
+
+/* #endregion Debug */
+
+
+
+
+/* #region Layout */
+.wrapper {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: var(--spo-black);
+    position: absolute;
+    margin-left: 0;
+    z-index: 2;
+}
+
+.upgrade {
+    width: 100%;
+    height: 100px;
+    position: relative;    
+}
+
+
+.debug .scrollbar {
+    width: 20px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+     
+}
+
+
+.debug .container-content {
+    margin-left: 200px;
+    height: 100vh;
+    background-color: gray;
+    color: aliceblue;
+    overflow: y;
+    overflow: hidden;
+}
+
+.debug .container-footer {
+    background-color: olive;
+}
+
+.debug .toolbar-left {
+    width: 200px;
+    height: 100px;
+    border: 2px dotted red;
+    
+}
+.debug .toolbar-center {
+    width: 500px;
+    height: 100px;
+    border: 2px dotted red;
+    
+}
+.debug .toolbar-right {
+    width: 200px;
+    height: 100px;
+    border: 2px dotted red;
+    
+}
+
+
+/* #region Utility */
+
+.container {
+    width: 80%;
+    max-width: 1152px;
+    margin: auto;
+}
+
+.d.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.pr-05 {
+    padding-right: 0.5rem;
+}
+
+.col-12 {
+    width: 100%;
+   
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 100px;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+
+    & li {
+        list-style: none;
+    }
+
+    & a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+    }
+}
+
+/* #region content album */
+.album-title {
+    padding-left: 0.5rem;
+    
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+.album {
+    padding: 1rem;
+    
+}
+
+.album-box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin-left: 0.5rem;
+}
+
+
+
+/* #region Footer */
+
+
+.container-footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 4;
 }
