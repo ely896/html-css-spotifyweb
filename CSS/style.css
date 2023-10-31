@@ -133,6 +133,7 @@ main {
     justify-content: center;
 }
 
+
 .col-12 {
     width: 100%;  
 }
@@ -201,6 +202,10 @@ a {
     height: 150px;
     background-color: pink;
     margin-left: 0.5rem;
+}
+
+.album-title, .author {
+    text-align: center;
 }
 
 /* #region Footer */
