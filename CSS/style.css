@@ -22,11 +22,8 @@ body {
 
 .debug .wrapper {
     width: 100%;
-    height: calc(100vh - 100px);
     background-color: pink;
-    display: flex;
-    overflow: y;
-    overflow: hidden;
+    
 }
 
 .debug .upgrade {
@@ -74,6 +71,36 @@ body {
 }
 
 /* #endregion Debug */
+
+/* #region Layout */
+
+
+.debug .wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+    overflow: y;
+    overflow: hidden;
+}
+
+.debug .upgrade {
+    height: 100px;
+}
+
+.debug .sidebar {
+    width: 15%;
+}
+
+.debug main {
+    width: 84%;
+    overflow-y: hidden;
+}
+
+
+.debug .scrollbar {
+    width: 1%;
+}
+
+
 
 /* #region Utility */
 
@@ -137,8 +164,6 @@ body {
     margin-left: 0.5rem;
 }
 
-
-
 /* #region Footer */
 
 
@@ -153,5 +178,4 @@ body {
 
 
 /* #region Media Query */
-
 
