@@ -8,9 +8,12 @@
 
 :root {
     --spo-black: black;
-    --spo-dark: #222222;
-    --spo-white: white;
-    --spo-gray: gray;
+    --spo-background: #141922;
+    --spo-white: #ffffff;
+    --spo-upgrade: #080b12;
+    --spo-gray: #080b12;
+    --spo--ligth-gray: #a3a3a3;
+    --spo--fluorescent: #adff2f;
 }
 
 body {
@@ -22,8 +25,7 @@ body {
 
 .debug .wrapper {
     width: 100%;
-    background-color: pink;
-    
+    background-color: pink;   
 }
 
 .debug .upgrade {
@@ -86,6 +88,8 @@ body {
     height: 100px;
 }
 
+
+
 .debug .sidebar {
     width: 15%;
 }
@@ -109,6 +113,7 @@ body {
     max-width: 1152px;
     margin: auto;
 }
+
 
 .d-flex {
     display: flex;
@@ -158,8 +163,8 @@ body {
 }
 
 .album-box {
-    width: 11rem;
-    height: 11rem;
+    width: 150px;
+    height: 150px;
     background-color: pink;
     margin-left: 0.5rem;
 }
@@ -179,3 +184,11 @@ body {
 
 /* #region Media Query */
 
+
+@media screen and (min-width: 1024px) and (max-width: 1368px) {
+   
+    .album-box {
+        width: 100px;
+        height: 100px;
+    }
+}
