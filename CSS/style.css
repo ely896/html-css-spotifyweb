@@ -11,7 +11,7 @@
     --spo-background: #141922;
     --spo-white: #ffffff;
     --spo-upgrade: #080b12;
-    --spo-gray: #080b12;
+    --spo-gray: #282828;
     --spo--ligth-gray: #a3a3a3;
     --spo--fluorescent: #adff2f;
 }
@@ -77,31 +77,32 @@ body {
 /* #region Layout */
 
 
-.debug .wrapper {
+.wrapper {
     height: calc(100vh - 100px);
     display: flex;
-    overflow: y;
     overflow: hidden;
 }
 
-.debug .upgrade {
+.upgrade {
     height: 100px;
+    background-color: var(--spo-upgrade);
 }
 
-
-
-.debug .sidebar {
+.sidebar {
     width: 15%;
+    background-color: var(--spo-black);
 }
 
-.debug main {
+main {
     width: 84%;
     overflow-y: hidden;
+    background-color: var(--spo-background);
 }
 
 
-.debug .scrollbar {
+.scrollbar {
     width: 1%;
+    background-color: #a3a3a3;
 }
 
 
@@ -175,20 +176,10 @@ body {
 .container-footer {
     width: 100%;
     height: 100px;
+    background-color: var(--spo-gray);
     display: flex;
     justify-content: space-between;
-    position: absolute;
     z-index: 4;
 }
 
 
-/* #region Media Query */
-
-
-@media screen and (min-width: 1024px) and (max-width: 1368px) {
-   
-    .album-box {
-        width: 100px;
-        height: 100px;
-    }
-}
