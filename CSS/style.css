@@ -29,7 +29,7 @@ body {
 }
 
 .debug .upgrade {
-    height: 100px;
+   
     background-color: #222222;
 }
 
@@ -84,7 +84,6 @@ body {
 }
 
 .upgrade {
-    height: 100px;
     background-color: var(--spo-upgrade);
 }
 
@@ -97,6 +96,7 @@ main {
     width: 84%;
     overflow-y: hidden;
     background-color: var(--spo-background);
+    color: var(--spo-white);
 }
 
 
@@ -110,11 +110,16 @@ main {
 /* #region Utility */
 
 .container {
-    width: 80%
+    width: 100%
     max-width: 1152px;
     margin: auto;
 }
 
+[class^="col-"]
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 .d-flex {
     display: flex;
@@ -132,13 +137,22 @@ main {
     width: 100%;  
 }
 
+
+a {
+    text-decoration: none;
+    color: var(--spo--ligth-gray);
+    text-transform: uppercase;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 1rem;
     font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 
     & li {
         list-style: none;
@@ -147,20 +161,39 @@ main {
     & a {
         text-decoration: none;
         text-transform: uppercase;
-        color: aliceblue;
+        color: var(--spo--ligth-gray);
     }
+}
+
+/* #region button */
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+    padding: 1.5rem 0;
+}
+
+
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--spo-white);
+    border-radius: 1rem;
+    width: 200px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    text-align: center;  
 }
 
 /* #region content album */
 
-.album-title {
-    padding-left: 0.5rem;
-   
+.album-title, .autore, h2 {
+    padding-left: 0.5rem;  
 }
 
 .album {
-    padding: 1rem;
-    
+    padding: 0.25rem;   
 }
 
 .album-box {
@@ -182,4 +215,12 @@ main {
     z-index: 4;
 }
 
+/* #region Media Query */
 
+@media screen and (min-width:1024px) and (max-width: 1152px) {
+
+    .col-lg-10 {
+        width: calc((100% / 12) * 10);
+    }
+    
+}
