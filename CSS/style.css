@@ -50,7 +50,7 @@ body {
     background-color: goldenrod;
 }
 
-.debug .container-footer {
+.debug .toolbar-footer {
     background-color: olive;
 }
 
@@ -89,7 +89,9 @@ body {
 
 .sidebar {
     width: 15%;
+    
     background-color: var(--spo-black);
+    
 }
 
 main {
@@ -111,7 +113,7 @@ main {
 
 .container {
     width: 100%
-    max-width: 1152px;
+    max-width: 1240px;
     margin: auto;
 }
 
@@ -125,6 +127,10 @@ main {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -134,7 +140,7 @@ main {
 }
 
 
-.col-12 {
+.col-lg-12 {
     width: 100%;  
 }
 
@@ -142,7 +148,7 @@ main {
 a {
     text-decoration: none;
     color: var(--spo--ligth-gray);
-    text-transform: uppercase;
+    
 }
 
 .menu {
@@ -166,6 +172,13 @@ a {
     }
 }
 
+i {
+    color: #ffffff;
+}
+h4 {
+    color: #ffffff;
+}
+
 /* #region button */
 
 .button {
@@ -187,21 +200,44 @@ a {
     text-align: center;  
 }
 
-/* #region content album */
+/* #region Sidebar */
 
+.logo img {
+    max-width: 50%;
+}
+
+.logo {
+    padding: 1rem 1rem;
+}
+
+.home, .search, .library, .install-app, .user-profile {
+    display: flex;
+    align-items: center;
+
+    & img {
+        max-width: 15%;
+    }
+}
+
+
+
+
+
+/* #region content album */
+.albums {
+    gap: 0.8rem;
+}
 .album-title, .autore, h2 {
     padding-left: 0.5rem;  
 }
 
-.album {
-    padding: 0.25rem;   
-}
+
 
 .album-box {
     width: 150px;
     height: 150px;
     background-color: pink;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
 }
 
 .album-title, .author {
@@ -211,7 +247,7 @@ a {
 /* #region Footer */
 
 
-.container-footer {
+.toolbar-footer {
     width: 100%;
     height: 100px;
     background-color: var(--spo-gray);
@@ -222,10 +258,16 @@ a {
 
 /* #region Media Query */
 
-@media screen and (min-width:1024px) and (max-width: 1152px) {
+@media screen and (min-width:980px) and (max-width: 1024px) {
 
-    .col-lg-10 {
-        width: calc((100% / 12) * 10);
-    }
-    
+    .container {
+        width: 90%;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 100%;
+    } 
 }
