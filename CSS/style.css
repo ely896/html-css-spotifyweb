@@ -139,7 +139,6 @@ main {
     justify-content: center;
 }
 
-
 .col-lg-12 {
     width: 100%;  
 }
@@ -220,9 +219,6 @@ h4 {
 }
 
 
-
-
-
 /* #region content album */
 .albums {
     gap: 0.8rem;
@@ -231,13 +227,14 @@ h4 {
     padding-left: 0.5rem;  
 }
 
-
+.album-box img {
+    max-width: 100%;
+}
 
 .album-box {
     width: 150px;
     height: 150px;
-    background-color: pink;
-    /* margin-left: 0.5rem; */
+
 }
 
 .album-title, .author {
@@ -254,6 +251,48 @@ h4 {
     display: flex;
     justify-content: space-between;
     z-index: 4;
+}
+
+
+/* #region Footer */
+.playing {
+    display: flex;
+    align-items: center;
+    
+}
+.playing img {
+    max-width: 15%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.center-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.center-bottom {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    color: var(--spo-white);
+    
+}
+
+.toolbar-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
 }
 
 /* #region Media Query */
