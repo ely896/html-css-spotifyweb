@@ -294,6 +294,14 @@ footer ul {
     gap: 1rem;
 }
 
+.play {
+    height: 5px;
+    width: 450px;
+    background: linear-gradient(-60deg, transparent, rgb(190, 184, 184) 50%);
+    border-radius: 0.5rem;
+    border: none;
+}
+
 /* #region Media Query */
 
 @media screen and (min-width:980px) and (max-width: 1024px) {
