@@ -39,9 +39,9 @@ body {
 }
 
 .debug main {
-    width: 84%;
+    width: 85%;
     background-color: gray;
-    overflow-y: hidden;
+    
 }
 
 
@@ -80,7 +80,7 @@ body {
 .wrapper {
     height: calc(100vh - 100px);
     display: flex;
-    overflow: hidden;
+    
 }
 
 .upgrade {
@@ -95,27 +95,26 @@ body {
 }
 
 main {
-    width: 84%;
-    overflow-y: hidden;
+    width: 85%;
+    overflow-y: scroll;
     background-color: var(--spo-background);
     color: var(--spo-white);
 }
 
 
-.scrollbar {
-    width: 1%;
-    background-color: #a3a3a3;
-}
+
 
 
 
 /* #region Utility */
 
 .container {
-    width: 100%
-    max-width: 1240px;
+    width: 100%;
+    max-width: 1152px;
     margin: auto;
 }
+
+
 
 [class^="col-"]
 {
