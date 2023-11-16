@@ -81,7 +81,6 @@ a {
     height: calc(100vh - 80px);
     width: calc(100vw - 200px);
     overflow-y: scroll;
-    flex-grow: 1;
     background-color: var(--spo-background);
     position: absolute;
     top: 0;
