@@ -98,13 +98,12 @@ footer {
 
 .container {
     width: 100%;
-    max-width: 1452px;
-    margin: auto;
+    flex-basis: 1152px;   
 }
 
 [class^="col"] {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 /* #region Upgrade */
@@ -205,7 +204,7 @@ a .fa-square-plus {
     border-bottom: 1px solid white;
 }
 
-#home::after {
+#home::before {
     border-left: 1px solid var(--spo--fluorescent);
 }
 
@@ -477,7 +476,6 @@ li .fa-play-circle {
 }
 
 
-
 @media screen and (max-width: 1300px) {
     .card {
         flex-basis: 160px;
@@ -683,6 +681,10 @@ li .fa-play-circle {
 
     .card h6 {
         font-size: 0.6rem;
+    }
+
+    footer {
+        width: 100%;
     }
        
 }
