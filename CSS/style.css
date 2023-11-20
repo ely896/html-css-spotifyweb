@@ -204,10 +204,6 @@ a .fa-square-plus {
     border-bottom: 1px solid white;
 }
 
-#home::before {
-    border-left: 1px solid var(--spo--fluorescent);
-}
-
 .sidebar-bottom {
     margin-top: 13rem;
 }
@@ -252,6 +248,32 @@ a .fa-square-plus {
     & img {
         max-width: 60%;
     }
+}
+
+#download {
+    color: var(--spo--ligth-gray);
+}
+
+#download img {
+    vertical-align: middle;
+    color: var(--spo--ligth-gray);
+}
+
+.install {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--spo--ligth-gray);
+}
+
+
+.profile {
+    border-radius: 50%;
+    background-color: #555;
+    vertical-align: middle;
+}
+
+.text-user {
+    padding: 0.5rem;
 }
 
 /* #endregion Sidebar */
