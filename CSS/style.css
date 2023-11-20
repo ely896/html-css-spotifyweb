@@ -347,7 +347,7 @@ footer .toolbar-center {
 }
 
 .playing img {
-    max-width: 10%;
+    width: 10%;
 }
 
 .playing h6,
@@ -691,8 +691,6 @@ li .fa-play-circle {
 
 
 
-
-
 @media screen and (min-width: 200px) and (max-width: 480px) {
     .card {
         flex-basis: 180px;
@@ -746,7 +744,20 @@ li .fa-play-circle {
         font-size: 0.5rem;
     }
 
+    .play-two {
+        width: 100px;
+    }
+
     .preference i {
         padding: 0;
     }
+
+    .toolbar-right .right {
+        gap: 0.25rem;
+    }
+    
+    .center-top {
+        gap: 1rem;
+    }
+
 }
